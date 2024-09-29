@@ -1,4 +1,4 @@
 all: 
-	docker-compose up
+	docker-compose run java
 build:
 	docker-compose up --build
