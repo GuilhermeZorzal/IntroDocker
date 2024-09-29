@@ -1,0 +1,9 @@
+version: "3.8" # Especifíca a versão do docker compose
+
+services: # Especifica os serviços(containers) que serão usados. 
+  java: # No nosso caso, só há um container chamado "java"
+    build: . # especifica que o Dockerfile para build é o presente no diretório raiz (".")
+    volumes: 
+      - ./src:/app # Mapeia a pasta local src para a pasta no container app 
+    working_dir: /app
+    command: ["sh","-c","javac App.java && java App"] # Quando o container é executado, executa esse comando
