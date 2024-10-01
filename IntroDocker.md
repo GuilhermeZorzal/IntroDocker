@@ -119,3 +119,7 @@ Ou, usando o docker-compose:
 ```bash
 docker-compose run service sh
 ```
+
+# DESINTALANDO
+
+Confira esse [link](https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker) para a desintalação completa.
