@@ -14,6 +14,8 @@
     - [Docker Compose](#docker-compose)
   - [Outros comandos úteis](#outros-comandos-úteis)
 - [Debbuging](#debbuging)
+- [Desintalando](#DESINSTALANDO)
+- [Limpando](#Limpando)
 
 ## Funcionamento do Docker
 
@@ -123,3 +125,13 @@ docker-compose run service sh
 # DESINTALANDO
 
 Confira esse [link](https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker) para a desintalação completa.
+
+# Limpando 
+
+Um dos grandes problemas do Docker é que ele pode consumir grandes quantidades de armazenamento. Para diminui-lo, é possível executar
+
+```bash
+docker system prune
+```
+
+Isso irá _podar_ diversos containers, imagens, etc.
